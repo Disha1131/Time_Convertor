@@ -60,6 +60,7 @@
                 if (seconds < 10) { seconds = "0" + seconds; }
                 time = hours + ':' + minutes + ':' + seconds;
                 document.getElementById("time").innerHTML = time + ' on<br>' + date;
+                document.getElementById("loc").innerHTML = 'of ' + city;
             }, 1000);
 
         }
@@ -112,7 +113,7 @@
 
     <div class="container my-4">
         <div class="jumbotron">
-            <h1 class="display-4">Current Time is : <span id="time">Select the Location!</span></h1>
+            <h1 class="display-4">Current Time <span id="loc"></span> : <span id="time">Select the Location!</span></h1>
             <p class="lead">We have got you covered.</p>
             <hr class="my-4">
             <p>We are here to show you the times of different Locations.</p>
